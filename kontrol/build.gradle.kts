@@ -5,7 +5,7 @@ plugins {
     id("convention.publication")
 }
 
-version = "0.1.0"
+version = "0.1.1"
 group = "io.github.chopyourbrain"
 
 kotlin {
@@ -13,6 +13,7 @@ kotlin {
         publishLibraryVariants("release", "debug")
     }
     ios()
+    iosSimulatorArm64()
 
     sourceSets {
         val commonMain by getting {
@@ -43,6 +44,9 @@ kotlin {
                 implementation(dep.ktor.client.ios)
                 implementation(dep.sqldelight.ios)
             }
+        }
+        val iosSimulatorArm64Main by getting {
+            dependsOn(iosMain)
         }
     }
 }

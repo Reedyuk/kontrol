@@ -10,11 +10,11 @@ kotlin {
     android()
 
     val onPhone = System.getenv("SDK_NAME")?.startsWith("iphoneos") ?: false
-    if (onPhone) {
-        iosArm64("ios")
-    } else {
-        iosX64("ios")
-    }
+    //if (onPhone) {
+        iosSimulatorArm64("ios")
+    //} else {
+   //     iosX64("ios")
+    //}
 
     cocoapods {
         summary = "Some description for the Shared Module"

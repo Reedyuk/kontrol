@@ -12,7 +12,7 @@ object sdk {
     val abi = mutableSetOf("armeabi-v7a", "arm64-v8a", "x86_64", "x86")
 
     val java = JavaVersion.VERSION_1_8
-    const val kotlin = "1.5.20"
+    const val kotlin = "1.6.10"
 
     const val ios = "10.0"
 }
@@ -29,14 +29,14 @@ object ver {
     const val coroutines = "1.5.0-native-mt"
     const val klock = "2.1.2"
     const val kotlin = sdk.kotlin
-    const val ktor = "1.6.0"
+    const val ktor = "1.6.6"
     const val material = "1.4.0-rc01"
-    const val napier = "1.5.0"
+    const val napier = "2.6.1"
     const val okhttp = "4.9.1"
     const val serialization_json = "1.2.1"
-    const val settings = "0.7.7"
+    const val settings = "0.8.1"
     const val stately = "1.1.1"
-    const val sqldelight = "1.5.1"
+    const val sqldelight = "1.5.3"
 
     object plugin {
         const val android_build_tools = "4.2.2"
